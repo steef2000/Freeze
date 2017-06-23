@@ -1,0 +1,192 @@
+@font-face {
+  font-family: MV Boli;
+  src: url(../assets/mvboli.ttf);
+}
+
+:root {
+  --primary-color: #087A82;
+  --button-color: #06666d;
+  --button-color-hover: #05555b;
+  --background-dashboard: #f2f5f9;
+  --margin-register: 75px;
+}
+
+body {
+  margin: 0px;
+  background-image: url(../assets/skyline.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*begin navbar*/
+
+.title {
+  font-family: MV Boli;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+li {
+  float: right;
+}
+
+li:first-child {
+  float: left;
+  font-size: 22px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-family: MV Boli;
+  font-size: 20px;
+}
+
+li a:hover {
+  cursor: pointer;
+}
+
+
+/*einde navbar*/
+
+
+/*begin welcomtext*/
+
+.welcomtext {
+  color: white;
+  float: left;
+  margin-top: 200px;
+  margin-left: 300px;
+  text-align: center;
+  font-family: roboto;
+  font-size: 20px;
+}
+
+.stripeOne {
+  width: 400px;
+}
+
+.stripeTwo {
+  width: 200px;
+}
+
+
+/*einde welcomtext*/
+
+.username input, .password input {
+  border-radius: 6px;
+  height: 17px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 4px 4px 4px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.password {
+  margin-right: 20px;
+  margin-left: 8px;
+}
+
+li button {
+  background-color: var(--button-color);
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  height: 30px;
+  width: 80px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+li button:hover {
+  background-color: var(--button-color-hover);
+}
+
+.register {
+  background-color: rgba(242, 245, 249, .6);
+  height: 630px;
+  width: 550px;
+  float: right;
+  margin-right: 80px;
+  margin-top: calc(500px - 20%);
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 35px;
+  font-family: fantasy;
+  margin-bottom: 15px;
+}
+
+.stripereg {
+  border-color: lightgray;
+  width: calc(600px - 16%);
+}
+
+.register input {
+  width: 400px;
+  height: 30px;
+  font-size: 15px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid gray;
+  margin-top: 20px;
+  margin-left: var(--margin-register);
+}
+
+.gender {
+  border: none;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: var(--margin-register);
+  background-color: white;
+  border-bottom: 2px solid gray;
+  width: 120px;
+  height: 25px;
+}
+
+.day, .month, .year {
+  border: none;
+  height: 20px;
+  margin-top: 5px;
+  background-color: white;
+  border-bottom: 2px solid gray;
+  height: 25px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.day {
+  margin-left: var(--margin-register);
+}
+
+.btnreg {
+  height: 50px;
+  width: 350px;
+  color: white;
+  background-color: var(--button-color);
+  border: none;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-left: calc(var(--margin-register) + 25px);
+}
+
+.btnreg:hover {
+  background-color: var(--button-color-hover);
+  cursor: pointer;
+}
