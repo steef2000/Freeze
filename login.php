@@ -1,7 +1,7 @@
 <?php
 include 'connect.inc.php';
 include 'functions.inc.php';
-{
+
     // check of beide invoer velden ingevult zijn.
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $username = $_POST['username'];
@@ -33,5 +33,5 @@ include 'functions.inc.php';
         errorlogin();
         exit();
     }
-}
+
 // Remco de Wilde
