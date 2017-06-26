@@ -43,3 +43,16 @@
      setcookie($cookieNameUsername, $username, time()+3600);
  }
 // Remco de Wilde
+
+function getFriends(){
+  global $id, $conn;
+  $sql = "SELECT Vrienden FROM `gebruiker` WHERE ID = ".$id;
+  $friends = mysqli_fetch_assoc(mysqli_query($conn, $sql))['Vrienden'];
+  /*
+  $result = mysqli_query($conn, $sql);
+  $name = mysqli_fetch_assoc($result)['Naam'];
+  */
+  foreach($friends as $friend){
+    var_dump( getProfileInfo($friend));
+  }
+}
